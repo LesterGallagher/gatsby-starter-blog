@@ -3,9 +3,14 @@ new_page_extension: md
 auto_deploy: true
 admin_path: "/admin"
 webhook_url: 
-sections: 
 upload_dir: src/uploads
 public_path: "../uploads"
+sections:
+- type: directory
+  path: src/pages
+  label: pagina's
+  create: all
+  match: "**/*"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
