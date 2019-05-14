@@ -3,18 +3,17 @@ new_page_extension: md
 auto_deploy: true
 admin_path: "/admin"
 webhook_url: 
-upload_dir: src/uploads
-public_path: "../uploads"
 sections:
 - type: directory
   path: src/pages
   label: pagina's
   create: all
   match: "**/*"
+upload_dir: src/uploads
+public_path: "../uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
-instant_preview: true
 build:
   preview_command: gatsby build
   publish_command: gatsby build
